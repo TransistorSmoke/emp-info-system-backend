@@ -1,25 +1,18 @@
 const mongoose = require('mongoose');
 
 const employeeSchema = new mongoose.Schema({
-  firstName: {
+  name: {
     type: String,
     maxLength: 32,
     required: true,
     trim: true,
   },
-  lastName: {
-    type: String,
-    maxLength: 32,
-    required: true,
-    trim: true,
-  },
-  badgeNumber: {
+  badge: {
     type: Number,
     required: true,
   },
   department: {
     type: String,
-    required: true,
     trim: true,
   },
   designation: {
@@ -28,7 +21,6 @@ const employeeSchema = new mongoose.Schema({
   },
   joinDate: {
     type: Date,
-    required: true,
   },
   resignDate: {
     type: Date,
