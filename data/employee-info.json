@@ -1,0 +1,51 @@
+[
+  {
+    "firstname": "Philip",
+    "lastname": "Burns",
+    "badge": "102909",
+    "department": "Technology",
+    "photo": "/employees/philip-burns.jpg"
+  },
+  {
+    "firstname": "Eric",
+    "lastname": "Larsen",
+    "badge": 105989,
+    "department": "Engineering",
+    "photo": "/employees/eric-larsen.jpg"
+  },
+  {
+    "firstname": "Sandra",
+    "lastname": "Kim",
+    "badge": 105872,
+    "department": "Technology",
+    "photo": "/employees/sandra-kim.jpg"
+  },
+  {
+    "firstname": "Claudia",
+    "lastname": "Becker",
+    "badge": 106879,
+    "department": "Research",
+    "photo": "/employees/claudia-becker.jpg"
+  },
+  {
+    "firstname": "Vihaan",
+    "lastname": "Patel",
+    "badge": 105872,
+    "department": "Marketing",
+    "photo": "/employees/vihaan-patel.jpg"
+  },
+  {
+    "firstname": "Willie",
+    "lastname": "Stiles",
+    "badge": 102909,
+    "department": "Marketing",
+    "photo": "/employees/willie-stiles.jpg"
+  },
+  {
+    "firstname": "Alyssa",
+    "lastname": "Nicholls",
+    "badge": 104982,
+    "department": "Finance",
+    "photo": "/employees/alyssa-nicholls.jpg"
+  }
+]

@@ -1,7 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const employee = require('../controllers/controller');
+const {
+  saveEmployeeInfo,
+  getAllEmployees,
+} = require('../controllers/controller');
 
-router.post('/employees', employee);
+router.post('/employees', saveEmployeeInfo);
+router.get('/employees', getAllEmployees);
 
 module.exports = router;

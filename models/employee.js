@@ -1,9 +1,15 @@
 const mongoose = require('mongoose');
 
 const employeeSchema = new mongoose.Schema({
-  name: {
+  firstname: {
     type: String,
-    maxLength: 32,
+    maxLength: 50,
+    required: true,
+    trim: true,
+  },
+  lastname: {
+    type: String,
+    maxLength: 50,
     required: true,
     trim: true,
   },
@@ -15,17 +21,14 @@ const employeeSchema = new mongoose.Schema({
     type: String,
     trim: true,
   },
-  designation: {
+  photo: {
     type: String,
-    maxLength: 20,
-  },
-  joinDate: {
-    type: Date,
-  },
-  resignDate: {
-    type: Date,
   },
 });
+
+// Virtuals
+
+// Methods
 
 const Employee = mongoose.model('Employee', employeeSchema);
 module.exports = Employee;
