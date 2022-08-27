@@ -14,8 +14,15 @@ require('dotenv').config();
 // Set middlewares
 app.use(morgan('dev'));
 app.use(bodyParser.json());
-app.use(express.static('assets'));
-app.use(express.static('assets/employees'));
+// app.use(express.static('assets'));
+// app.use(express.static('assets/employees'));
+
+// app.use(express.static('assets/employees'));
+app.use(express.static(path.join(__dirname, '/assets/employees')));
+
+app.get('/', (req, res) => {
+  res.send('index.html');
+});
 
 // Connect to the database
 mongoose.connect(
@@ -24,10 +31,7 @@ mongoose.connect(
     useNewUrlParser: true,
     useUnifiedTopology: true,
   },
-  () =>
-    console.log(
-      `Connection to database has been made. DATABASE = ${process.env.DATABASE}`
-    )
+  () => console.log(`Connection to database has been made.`)
 );
 
 if (process.env.NODE_ENV === 'development') {

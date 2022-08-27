@@ -3,8 +3,7 @@ const Employee = require('../models/employee');
 const saveEmployeeInfo = (req, res) => {
   const employeeInfo = req.body;
   const employee = new Employee(employeeInfo);
-  res.set('Access-Control-Allow-Origin', 'http://localhost:3000');
-  r;
+  // res.set('Access-Control-Allow-Origin', 'http://localhost:3000');
   employee.save((err, success) => {
     const { firstname, lastname } = employee;
     if (err) {

@@ -21,9 +21,6 @@ const employeeSchema = new mongoose.Schema({
     type: String,
     trim: true,
   },
-  photo: {
-    type: String,
-  },
 });
 
 // Virtuals
