@@ -1,5 +1,4 @@
-# emp-info-system-backend
-
+# Employee Information System Node.JS Backend
 This is the backend for the test project Employee Information System, currently being created with a ReactJS frontend.
 This works for now, with data saving into a MongoDB database.
 
